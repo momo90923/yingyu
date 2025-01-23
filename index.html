@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>张小兔小学三年级下册英语</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 10px;
+        }
+        .unit-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .unit-card {
+            flex: 1 1 calc(50% - 20px);
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .unit-card:hover {
+            background-color: #f0f0f0;
+        }
+        @media (max-width: 600px) {
+            .unit-card {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>张小兔小学三年级下册英语</h1>
+            <p>点击Unit进入学习</p>
+        </header>
+
+        <main>
+            <div class="unit-grid">
+                <div class="unit-card" data-unit="1">
+                    <h2>Unit 1</h2>
+                    <p>位置介词与物品</p>
+                </div>
+                <div class="unit-card" data-unit="2">
+                    <h2>Unit 2</h2>
+                    <p>天气与季节</p>
+                </div>
+                <div class="unit-card" data-unit="3">
+                    <h2>Unit 3</h2>
+                    <p>四季与自然</p>
+                </div>
+                <div class="unit-card" data-unit="5">
+                    <h2>Unit 5</h2>
+                    <p>时间表达</p>
+                </div>
+                <div class="unit-card" data-unit="6">
+                    <h2>Unit 6</h2>
+                    <p>星期与活动</p>
+                </div>
+                <div class="unit-card" data-unit="7">
+                    <h2>Unit 7</h2>
+                    <p>食物与饮品</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
